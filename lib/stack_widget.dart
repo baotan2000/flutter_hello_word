@@ -11,17 +11,22 @@ class _StackWidgetState extends State<StackWidget> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: Alignment.center,
       children: [
-        Container(
-          width: 200,
-          height: 200,
-          color: Colors.red,
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+          ),
         ),
-        Container(
-          height: 150,
-          width: 150,
-          color: Colors.blue,
+        Align(
+          alignment: Alignment.topRight,
+          child: Container(
+            height: 150,
+            width: 150,
+            color: Colors.blue,
+          ),
         )
       ],
     );
