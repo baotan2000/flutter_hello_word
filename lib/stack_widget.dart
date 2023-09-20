@@ -15,17 +15,26 @@ class _StackWidgetState extends State<StackWidget> {
         Align(
           alignment: Alignment.centerLeft,
           child: Container(
-            width: 200,
-            height: 200,
+            width: 100,
+            height: 100,
             color: Colors.red,
           ),
         ),
         Align(
           alignment: Alignment.topRight,
           child: Container(
-            height: 150,
-            width: 150,
+            height: 100,
+            width: 100,
             color: Colors.blue,
+          ),
+        ),
+        Positioned(
+          left: 10,
+          top: 10,
+          child: Container(
+            width: 100,
+            height: 100,
+            color: Colors.red,
           ),
         )
       ],
