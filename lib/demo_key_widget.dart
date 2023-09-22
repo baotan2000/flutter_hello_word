@@ -16,8 +16,14 @@ class _DemoKeyWidgetState extends State<DemoKeyWidget> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    listWidget.add(Children1(key: Key("0")));
-    listWidget.add(Children1(key: Key("1")));
+    listWidget.add(Padding(
+        key: UniqueKey(),
+        padding: const EdgeInsets.all(8.0),
+        child: Children1()));
+    listWidget.add(Padding(
+        key: UniqueKey(),
+        padding: const EdgeInsets.all(8.0),
+        child: Children1()));
   }
 
   @override
@@ -45,9 +51,14 @@ class _DemoKeyWidgetState extends State<DemoKeyWidget> {
   }
 }
 
-class Children1 extends StatelessWidget {
+class Children1 extends StatefulWidget {
   const Children1({super.key});
 
+  @override
+  State<Children1> createState() => _Children1State();
+}
+
+class _Children1State extends State<Children1> {
   @override
   Widget build(BuildContext context) {
     return Container(
