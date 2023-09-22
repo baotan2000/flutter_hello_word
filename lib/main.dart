@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hello_word/demo_key_widget.dart';
 import 'package:flutter_hello_word/home_page.dart';
 import 'package:flutter_hello_word/life_cycle_statefull_widget.dart';
 
@@ -15,9 +16,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Flutter Demo",
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: LifeCycleStatefullWidget(),
+      home: HomePage(),
     );
   }
 }

@@ -24,7 +24,7 @@ class _LifeCycleStatefullWidgetState extends State<LifeCycleStatefullWidget> {
                   "Count = $count",
                   style: TextStyle(fontSize: 20),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
