@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hello_word/demo_build_context_widget.dart';
+import 'package:flutter_hello_word/demo_inherited_widget.dart';
 import 'package:flutter_hello_word/demo_key_widget.dart';
 import 'package:flutter_hello_word/list_view_widget.dart';
 import 'package:flutter_hello_word/stack_widget.dart';
@@ -21,7 +22,7 @@ class _HomePageState extends State<HomePage> {
           ),
           body: Container(
             constraints: BoxConstraints.expand(),
-            child: DemoBuildContextWidget(),
+            child: DemoInheritedWidget(),
           )),
     );
   }
